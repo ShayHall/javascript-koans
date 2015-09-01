@@ -23,17 +23,17 @@ describe("About Expects", function() {
   });
 
   // Sometimes you need to be really exact about what you "type."
-  it("should check the_type_first", function () {
+  it("should check the _type_ first", function () {
     var actual = (1 + 1).toString();
 
     // use to.be.a() to check the type of a value
-    expect(actual).to.be.a(String);
+    expect(actual).to.be.a('string');
 
-    expect(actual).to.be(1); // Fails?
+    expect(actual).to.be('Number'); // Fails?
   });
 
   // Sometimes we will ask you to fill in the values.
   it("should have filled in values", function () {
-    expect(1 + 1).to.equal(FILL_ME_IN);
+    expect(1 + 1).to.equal(2);
   });
 });
