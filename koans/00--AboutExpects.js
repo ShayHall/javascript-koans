@@ -29,7 +29,7 @@ describe("About Expects", function() {
     // use to.be.a() to check the type of a value
     expect(actual).to.be.a('string');
 
-    expect(actual).to.be('Number'); // Fails?
+    expect(actual).to.equal('2'); // Fails?
   });
 
   // Sometimes we will ask you to fill in the values.
